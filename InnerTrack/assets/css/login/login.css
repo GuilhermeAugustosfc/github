@@ -1,0 +1,50 @@
+
+html,
+body,
+.container-fluid{
+    height: 100%;
+}
+body{
+    background-image: url("../../../img/background-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.corpo{
+    height: 100%;
+}
+.login-titulo{
+    font-weight: bolder;
+    color: dimgray;
+}
+.botao-confirma{
+    background-color: dimgray;
+    color: lightgray;
+}
+.login-tela{
+    background-color: #e5e5e5;
+    padding: 30px;
+    box-shadow: 6px 6px 13px #404040;
+    border-radius: 10px;
+}
+.login-logo{
+    display: flex;
+    justify-content: center;
+}
+.field{
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+.label-campos-login{
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    transform-origin: left bottom;
+    transform: translate(0, 2.3rem) scale(1.1);
+    margin-left: 9px;
+}
+input:focus{
+    background-color: black;
+}
