@@ -1,0 +1,91 @@
+.tabela{
+    margin-top: 65px;
+}
+.painel-container{
+    font-size: 12px;
+    margin-top: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.template_router{
+    font-weight: 600;
+}
+.titulo-tabela{
+    float: left;
+    color: dimgray;
+    font-size: 27px;
+    font-family: sans-serif;
+    margin-top: 7px;
+    text-align: center;
+}
+.theme:hover, .theme > a:hover,.theme > a:focus{
+    text-decoration: none;
+    color: darkorange;
+
+}
+.theme, .theme > a{
+    text-decoration: none;
+    color: darkorange ;
+    background-color: darkslategrey;
+
+}
+.theme, .theme > a:active{
+    border-color: darkslategray;
+}
+
+#myTable > tbody > tr > td{
+    font-size: .9rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#myTable > thead > tr > th{
+    font-size: 1rem;
+    color: lightgray;
+    text-transform: capitalize;
+}
+#myTable > thead > tr > th:hover{
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+    font-size: 1.0rem !important;
+    font-weight: bold;
+}
+.delete:hover, .delete > a:hover,.delete > a:focus{
+    text-decoration: none;
+    color: darkred;
+    
+}
+.delete, .delete > a{
+    text-decoration: none;
+    color: darkred;
+    cursor:no-drop !important;
+
+}
+.delete, .delete > a:active{
+    border-color: darkslategray;
+}
+
+.edit:hover, .edit > a:hover,.edit > a:focus{
+    text-decoration: none;
+    color: #a2a93d;
+}
+.edit, .edit > a{
+    text-decoration: none;
+    color: #a2a93d;
+    cursor:no-drop !important;
+
+}
+.edit, .edit > a:active{
+    border-color: darkslategray;
+}
+.darkred{
+    color: red;
+    cursor: pointer !important;
+
+}
+.darkorange{
+    color: #a2a93d;
+    cursor: pointer !important;
+
+}

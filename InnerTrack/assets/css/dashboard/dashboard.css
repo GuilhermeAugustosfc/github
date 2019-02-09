@@ -1,0 +1,105 @@
+.container{
+    margin-top: 4rem;
+}
+
+.info{
+    display: flex;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    margin: 1rem 0;
+    border-left: 4px solid #ffc107;
+    border-radius: .25rem;
+}
+.borda{
+    border: 1px solid darkgray;
+
+}
+.map{
+    background-color: brown;
+    height: 63vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.map > h4{
+    color: whitesmoke;
+    font-size: 50px;
+}
+.bg-laranja{
+    background-color: #ff7f00;
+    color: snow;
+    font-weight: bold;
+    border: 0;
+}
+.dark_cinza{
+    color: darkslategray;
+}
+.roxo{
+    color: #5a4171;
+}
+.cinza{
+    color: darkslategray;
+}
+.vermelho_escuro{
+    color: #690d0d;
+}
+a{
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+}
+.triger{
+    cursor: pointer;
+}
+.preto{
+    background-color: rgba(255,255,255,.075);
+}
+.icon-dash{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-header{
+    border-bottom: 1px solid darkorange;
+}
+.info-dash{
+    flex-grow: 3;
+    text-align: center;
+    
+}
+.margin-modal{
+    margin-top: 12rem;
+}
+.info-dash > small{
+    font-size: 24px;
+    font-family: unset;
+}
+.grafico{
+    height: 82vh;
+}
+.titulo-graficos:hover,.titulo-graficos:focus{
+    border-color:transparent !important;
+}
+.markers{
+    background-color: transparent;
+    cursor: pointer;
+    color: darkred;
+}
+.markers_do_mapa:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.markers_do_mapa{
+    cursor: pointer;
+    
+}

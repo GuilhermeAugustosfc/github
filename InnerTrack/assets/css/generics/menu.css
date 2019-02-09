@@ -1,0 +1,91 @@
+body{
+    background-color: #e2e2e2;
+}
+.botaoDoMenu{
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.navbar{
+    z-index: 9998;
+    border: none;
+    padding: 0px;
+    height: 55px;
+    background-color: black;
+}
+.icon-menu{
+    font-size: 28px;
+}
+.title-nav{
+    color: white;
+
+}
+.links_config:hover{
+    text-decoration: underline;
+}
+.pai_config_usuario{
+    background-color: #dddddd;
+}
+.container-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-overlay{
+    width: 100%;
+}
+.pushy ul:first-child{
+    margin-top: 0;
+}
+.icon{
+    margin-right: 10px;
+}
+.img{
+    display: block;
+}
+.admin-area{
+    background-color: darkslategray;
+    color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+}
+.title-nav > a{
+    color: white;
+}
+.title-nav > a:hover{
+    color: snow;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.usuario{
+    color: snow;
+    border: 0;
+    background-color: #343a40;
+    box-shadow: none;
+    height: 55px;
+    margin: 0px;
+}
+.alerts{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    cursor: pointer;
+}
+.alerts:hover{
+    background-color: black;
+    transition: 0.6;
+}
+
+.dropdown-menu{
+    left:-65%;
+}
+.sino{
+    color: #e3ff4c;
+}
+.sino:hover{
+    color: darkorange;
+    transition: 0.7s;
+}
+
