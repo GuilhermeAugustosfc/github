@@ -15,6 +15,10 @@ $(document).ready(function(){
         format: 'yyyy/mm/dd hh:MM'
     });
     var map = cria_mapa();
+    map.on('click',function(e){
+        console.log(e.latlng);
+        
+    })
     $('#tabela_relatorio').bootstrapTable({
         columns:[{
             field:'lat',

@@ -1,6 +1,10 @@
 body{
     background-color: #e2e2e2;
 }
+.config{
+    position: relative;
+    top: -6px;
+}
 .botaoDoMenu{
     margin: 0;
     padding: 10px;

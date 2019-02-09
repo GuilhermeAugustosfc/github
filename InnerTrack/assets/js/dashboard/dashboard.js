@@ -7,7 +7,7 @@ $(document).ready(function () {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     var target = L.latLng(-22.217478,-49.657750 );
-    map.setView(target, 12);
+    map.setView(target, 12)
    
     
     BuscaRegistrosProDashboard();
@@ -55,7 +55,6 @@ $(document).ready(function () {
         for(var i in data){
             lats.push(L.latLng(data[i].lon, data[i].lat))
         }
-        L.circle(L.latLng(data[0].lon, data[0].lat)).addTo(map);
         
         return map.fitBounds(lats);
     }
