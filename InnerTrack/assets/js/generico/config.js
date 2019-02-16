@@ -28,7 +28,8 @@ $("#modal").iziModal({
          var url_relatorio = $('#config_pagina').attr('data-relatorio')
          $.ajax({
             method: "GET",
-            url: url_relatorio,   
+            url: url_relatorio,
+            crossDomain : true, 
             dataType: "JSON",
             success: function(data){
                 $('#minhaTabela').bootstrapTable({

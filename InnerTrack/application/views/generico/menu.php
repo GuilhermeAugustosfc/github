@@ -36,7 +36,7 @@
             <li class="pushy-link admin-area">
                Users
             </li>
-            <li class="pushy-link"><a href="#"><i class="fas fa-cogs icon"></i>Conta</a></li>
+            <li class="pushy-link"><a href="<?=base_url('Teste')?>"><i class="fas fa-cogs icon"></i>Conta</a></li>
             
         </ul>
     </div>

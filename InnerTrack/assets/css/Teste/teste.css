@@ -1,0 +1,18 @@
+#map_teste{
+    height:530px;
+    border-radius:.50rem;
+}
+.add_tipo.focus, .add_tipo:focus{
+    box-shadow: 0 0 0 0.2rem rgba(27, 255, 0, 0.25);
+}
+.none{
+    display: none;
+}
+.botoes{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.formulario{
+    position: relative;
+}

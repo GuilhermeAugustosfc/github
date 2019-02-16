@@ -42,6 +42,7 @@ $(document).ready(function () {
                 for(var i = 0 in data){
                     dropMarkers(data[i]);
                     let layers_marker = addMarker(map,data[i]);
+                    
                     layers_marker.addTo(map);
                     add_descricao_do_marker(layers_marker,data[i]);
                 }
