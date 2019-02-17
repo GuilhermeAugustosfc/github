@@ -19,6 +19,7 @@
                 </span>
                 <hr>
                 <div class="card-body p-3 formulario">
+                    <div class="blokeia"></div>
                    <div class="form-group" id="cliente">
 
                    </div>
@@ -29,7 +30,8 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-adjust"></i></span>
                             </div>
-                            <select name="tipo" id="select" class="form-control">
+                            <select name="tipo" id="select" class="form-control" data-bind="cor-tipo">
+                                <option selected value="">Escolha um tipo...</option>
                                 <option class="text-primary" value="azul">Azul</option>
                                 <option class="text-success" value="verde">Verde</option>
                                 <option class="text-warning" value="amarelo">Amarelo</option>
@@ -40,7 +42,7 @@
                             </div>
                         </div>
                         <div class="input-group none" id="caixa-botoes">
-                            <input type="text" class="form-control" placeholder="digite seu tipo..." id="novo_tipo">
+                            <input type="text" class="form-control"placeholder="digite seu tipo..." id="novo_tipo">
                             <div class="botoes">
                                 <button class="btn bg-success text-light" id="salvar_tipo"><i class="fas fa-check-circle"></i></button>
                                 <button class="btn bg-danger text-light" id="cancelar_tipo"><i class="fas fa-times"></i></button>
@@ -50,28 +52,33 @@
                    <div class="form-group">
                         <label for="descricao">Descrição</label>
                         <div class="input-group">
-                            <input type="text" id="descricao" class="form-control">
+                            <input type="text" name="descricao" id="descricao" class="form-control" data-bind="descricao">
                         </div>
                    </div>
                    <div class="form-group">
                         <label for="cidade">Cidade</label>
                         <div class="input-group">
-                            <input type="text" id="cidade" class="form-control">
+                            <input type="text" name="cidade" id="cidade" class="form-control" data-bind="cidade">
                         </div>
                    </div>
                    <div class="form-group">
                         <label for="estado">Estado</label>
                         <div class="input-group">
-                            <input type="text" id="estado" class="form-control">
+                            <input type="text" name="estado" id="estado" class="form-control" data-bind="estado">
                         </div>
+                   </div>
+                   <div class="input-group">
+                       <button class="btn btn-success" id="salvar_dados_formulario">Salvar</button>
+                       <button class="btn btn-warning">Cancelar</button>
                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <table id="bootstrapTable"></table>
-            </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12 bg-light">
+            <table id="bootstrapTable"></table>
         </div>
     </div>
 </div>

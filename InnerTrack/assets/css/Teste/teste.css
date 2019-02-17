@@ -1,3 +1,7 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
 #map_teste{
     height:530px;
     border-radius:.50rem;
@@ -15,4 +19,17 @@
 }
 .formulario{
     position: relative;
+    box-sizing: border-box;
+}
+.preto{
+    background-color: #343a40;
+    color: white;
+}
+.blokeia{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5a1;
+    z-index: 3;
+    cursor: not-allowed;
 }
