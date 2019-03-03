@@ -67,6 +67,12 @@
                             <input type="text" name="estado" id="estado" class="form-control" data-bind="estado">
                         </div>
                    </div>
+                   <div class="form-group">
+                        <label for="numero">numero</label>
+                        <div class="input-group">
+                            <input type="number" name="numero" id="numero" class="form-control" data-bind="numero">
+                        </div>
+                   </div>
                    <div class="input-group">
                        <button class="btn btn-success" id="salvar_dados_formulario">Salvar</button>
                        <button class="btn btn-warning">Cancelar</button>
@@ -74,11 +80,19 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button id="popupo" data-toggle="popover" >Botoao dopopup</button>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-12 bg-light">
-            <table id="bootstrapTable"></table>
+            <div id="toolbar">
+                <button class="btn btn-warning" id="edit">Editar</button>
+            </div>
+            <table id="bootstrapTable"
+                    data-toolbar="#toolbar"></table>
         </div>
     </div>
 </div>

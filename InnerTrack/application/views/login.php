@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url("assets/Libs/bootstrap/css/bootstrap.min.css")?>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url("assets/css/login/login.css")?>" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     
 </head>
 <body>
@@ -47,9 +48,12 @@
             </div>
         </div>
     </div>
+    
 </div>
     <script src="<?=base_url("assets/Libs/jquery/jquery.js")?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="<?=base_url("assets/js/login/login.js")?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
 </body>
 </html>

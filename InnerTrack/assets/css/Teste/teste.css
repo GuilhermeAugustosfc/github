@@ -25,11 +25,22 @@ html,body{
     background-color: #343a40;
     color: white;
 }
+.label_popup{
+    width: 41px;
+}
+.input-load{
+    background-image: url('../../../img/6.gif');
+    background-color: #ebebe4;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 21px;
+}
 .blokeia{
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 100%;
     background-color: #f5f5f5a1;
     z-index: 3;
     cursor: not-allowed;
+    left: 2%;
 }
