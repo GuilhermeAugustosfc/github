@@ -7,7 +7,7 @@ $(document).ready(function(){
         html:true,
         content:"<label class='label_popup'>IP:</label> <span ><input id='ip' type='text' class='input-load '></span></br>\
                 <label class='label_popup'>DNS:</label> <span ><input id='dns' type='text' class='input-load '></span></br>\
-                <label class='label_popup'>Porta:</label> <span ><input id='porta' type='text' class='input-load '></span></br>"
+                <label class='label_popup'>Porta:</label> <span ><input id='porta' type='color' class='input-load '></span></br>"
     })
     $('#popupo').on('show.bs.popover',function(){
         $.ajax({
@@ -18,16 +18,16 @@ $(document).ready(function(){
                 $('.input-load').removeClass('input-load');
                 $('#ip').val('192.168.0.1').attr('disabled','disabled');
                 $('#dns').val('ftrack_frdata@gmail.com').attr('disabled','disabled');
-                $('#porta').val('80').attr('disabled','disabled');
+                $('#porta').on('change',function(){
+                    let cor = $(this).val();
+                    $('#edit').css({backgroundColor:cor})
+                    
+                })
+                
             })
         
         })
-   
     
-    
-    
-
-
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
