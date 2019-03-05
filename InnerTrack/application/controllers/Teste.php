@@ -13,10 +13,6 @@ class Teste extends CI_Controller{
                 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.css',
                 'https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.11/combined/css/gijgo.min.css',
                 base_url("assets/Libs/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css")
-
-                
-
-
             ),
             'js'=>array(
                 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js',
@@ -24,8 +20,6 @@ class Teste extends CI_Controller{
                 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.11/combined/js/gijgo.min.js',
                 base_url("assets/Libs/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js")
-
-
             )
 
         );
@@ -38,31 +32,29 @@ class Teste extends CI_Controller{
                 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.css',
                 'https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.11/combined/css/gijgo.min.css',
                 base_url("assets/Libs/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css")
-
-                
-
-
             ),
             'js'=>array(
                 base_url('assets/js/Teste/novo.js'),
                 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.11/combined/js/gijgo.min.js',
                 base_url("assets/Libs/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js")
-
-
             )
 
         );
-        $id = $this->input->post();
-        
-        if(isset($id['id'])){
-            array_push($dados,$id['id']);
-            echo json_encode(array('status'=>true));
-            exit();
-        }
         $this->load->template("Teste/novo",$dados);
-        echo json_encode($dados);
     }
+    public function novoTeste(){
+        $dados = array(
+            'css'=>array(
+                base_url('assets/css/Teste/novoTeste.css'),
+            ),
+            'js'=>array(
+                base_url('assets/js/Teste/novoTeste.js'),
+            )
+        );
+        $this->load->template("Teste/novoTeste",$dados);
+    }
+
     public function teste(){
        
         $dados = $this->Teste_model->buscarDados();

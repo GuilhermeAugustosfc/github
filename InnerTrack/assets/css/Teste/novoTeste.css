@@ -1,0 +1,13 @@
+html,
+body,
+.container{
+    height: 100%;
+    position: relative;
+}
+.contaiber-quadrado{
+    height: 80%;
+    align-items: center;
+}
+.quadrado-rodadndo{
+    height: 40%;
+}
